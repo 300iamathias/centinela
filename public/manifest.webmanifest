@@ -1,0 +1,50 @@
+{
+  "name": "Centinela Seguridad Privada",
+  "short_name": "Centinela",
+  "description": "Vigilancia física, monitoreo de alarmas 24/7, CCTV, control de acceso y escoltas en Ecuador. Cotiza por WhatsApp.",
+  "lang": "es-EC",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0A0F14",
+  "theme_color": "#0A0F14",
+  "categories": ["business", "security", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Cotizar servicio",
+      "short_name": "Cotizar",
+      "description": "Arma tu solicitud de cotización y enviala por WhatsApp",
+      "url": "/#cotizar",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Nuestros servicios",
+      "short_name": "Servicios",
+      "description": "Guardianía, monitoreo, CCTV, acceso, escoltas y riesgos",
+      "url": "/#servicios",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
