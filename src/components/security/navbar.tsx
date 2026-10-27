@@ -105,7 +105,7 @@ export function Navbar() {
                     variant="outline"
                     size="sm"
                     label="Instalar app"
-                    className="border-steel-600 text-paper-100 hover:bg-steel-800/60 hover:text-signal-400"
+                    className="border-signal-500/70 bg-signal-500/10 text-signal-400 hover:border-signal-500 hover:bg-signal-500 hover:text-ink-950"
                   />
                 </div>
 
@@ -177,7 +177,7 @@ export function Navbar() {
           <div className="border-t border-steel-700 p-4 space-y-2">
             <InstallAppButton
               variant="outline"
-              className="w-full border-steel-600 text-paper-100 hover:bg-steel-800/60"
+              className="w-full border-signal-500/70 bg-signal-500/10 text-signal-400 hover:border-signal-500 hover:bg-signal-500 hover:text-ink-950"
               label="Instalar app en tu celular"
             />
             <Button

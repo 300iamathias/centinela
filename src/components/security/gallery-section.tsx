@@ -117,7 +117,7 @@ export function GallerySection() {
                   className="group relative block w-full overflow-hidden rounded-md shadow-sm focus-visible:ring-2 focus-visible:ring-signal-500"
                   aria-label={`Ampliar foto: ${item.title}`}
                 >
-                  <span className="relative block aspect-[4/3]">
+                  <span className="relative block aspect-square">
                     <Image
                       src={item.src}
                       alt={item.title}
@@ -208,7 +208,7 @@ export function GallerySection() {
               className="relative max-h-[82vh] w-full max-w-4xl"
               onClick={(e) => e.stopPropagation()}
             >
-              <span className="relative block aspect-[4/3] overflow-hidden rounded-md">
+              <span className="relative block aspect-square overflow-hidden rounded-md">
                 <Image
                   src={current.src}
                   alt={current.title}

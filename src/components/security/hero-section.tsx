@@ -123,10 +123,10 @@ export function HeroSection() {
             ))}
             <li className="flex items-center gap-2 text-sm text-paper-100/85">
               <InstallAppButton
-                variant="ghost"
+                variant="outline"
                 size="sm"
                 label="Instalar en tu celular"
-                className="text-signal-400 hover:text-signal-300 hover:bg-signal-500/10 px-2"
+                className="border-signal-500/70 bg-signal-500/10 text-signal-400 hover:border-signal-500 hover:bg-signal-500 hover:text-ink-950 px-3"
               />
             </li>
           </motion.ul>

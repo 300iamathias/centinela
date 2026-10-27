@@ -149,8 +149,8 @@ export function InstallAppButton({
                         3
                       </span>
                       <span>
-                        Confirma con <strong>«Añadir»</strong>. ¡Listo, a
-                        endulzarte!
+                        Confirma con <strong>«Añadir»</strong>. ¡Listo, ya estás
+                        protegido!
                       </span>
                     </li>
                   </>

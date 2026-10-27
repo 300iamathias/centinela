@@ -17,7 +17,7 @@ export function WhyUsSection() {
                 width={1024}
                 height={1024}
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-square w-full object-cover"
               />
               <figcaption className="absolute inset-x-0 bottom-0 flex items-center gap-2.5 bg-ink-950/80 px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-paper-100 backdrop-blur">
                 <span className="relative flex h-2 w-2" aria-hidden>

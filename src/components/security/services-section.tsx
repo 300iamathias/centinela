@@ -48,13 +48,13 @@ export function ServicesSection() {
             return (
               <Reveal key={service.id} delay={(i % 3) * 0.08}>
                 <article className="group relative h-full overflow-hidden rounded-md border border-steel-600/25 bg-white shadow-sm transition-all hover:-translate-y-1 hover:border-signal-500/50 hover:shadow-xl hover:shadow-steel-700/10">
-                  <div className="relative h-44 overflow-hidden bg-steel-900">
+                  <div className="relative h-52 overflow-hidden bg-steel-900">
                     <Image
                       src={service.image}
                       alt={service.imageAlt}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-steel-950/70 to-transparent" aria-hidden />
                     <span className="absolute bottom-3 left-3 inline-flex h-11 w-11 items-center justify-center rounded-sm bg-ink-950/80 ring-1 ring-signal-500/50 backdrop-blur">

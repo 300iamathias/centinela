@@ -129,7 +129,7 @@ export function Footer() {
                 variant="outline"
                 size="sm"
                 label="Instalar la app"
-                className="w-full border-steel-600 bg-transparent text-paper-100 hover:bg-steel-800/60 hover:text-signal-400"
+                className="w-full border-signal-500/70 bg-signal-500/10 text-signal-400 hover:border-signal-500 hover:bg-signal-500 hover:text-ink-950"
               />
             </div>
           </div>
