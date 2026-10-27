@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, Phone } from "lucide-react";
+import { Menu, Phone, Siren } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetDescription, SheetTitle } from "@/components/ui/sheet";
 import { DemoBanner } from "./demo-banner";
@@ -80,14 +80,24 @@ export function Navbar() {
 
               {/* Acciones */}
               <div className="flex items-center gap-2">
-                {/* Llamada directa (CRO handoff §8) */}
+                {/* Llamada directa (CRO handoff §8) — número completo solo en xl */}
                 <a
                   href={`tel:+${SITE.whatsapp}`}
                   aria-label="Llamar por teléfono"
-                  className="inline-flex h-11 w-11 md:w-auto md:px-4 items-center justify-center gap-2 rounded-sm border border-steel-600 text-paper-100 hover:border-signal-500/60 hover:text-signal-400 transition-colors text-sm font-semibold"
+                  className="inline-flex h-11 w-11 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-sm border border-steel-600 text-paper-100 transition-colors hover:border-signal-500/60 hover:text-signal-400 xl:w-auto xl:px-4 text-sm font-semibold"
                 >
                   <Phone className="h-4 w-4" aria-hidden />
-                  <span className="hidden md:inline">{SITE.whatsappDisplay}</span>
+                  <span className="hidden xl:inline whitespace-nowrap">{SITE.whatsappDisplay}</span>
+                </a>
+
+                {/* SOS emergencias 24/7 — lead más caliente */}
+                <a
+                  href={`tel:+${SITE.whatsapp}`}
+                  aria-label="SOS emergencias 24/7 — llamar a la central"
+                  className="hidden sm:inline-flex h-9 shrink-0 items-center gap-1.5 rounded-sm border border-alert-500/60 bg-alert-500/10 px-2.5 text-xs font-bold uppercase tracking-[0.14em] text-alert-500 transition-colors hover:bg-alert-500 hover:text-white"
+                >
+                  <Siren className="h-3.5 w-3.5" aria-hidden />
+                  SOS
                 </a>
 
                 <div className="hidden xl:block">
@@ -101,7 +111,7 @@ export function Navbar() {
 
                 <Button
                   size="sm"
-                  className="hidden sm:inline-flex bg-signal-500 text-ink-950 hover:bg-signal-400 font-bold shadow-sm shadow-signal-500/20"
+                  className="hidden shrink-0 sm:inline-flex bg-signal-500 text-ink-950 hover:bg-signal-400 font-bold shadow-sm shadow-signal-500/20"
                   asChild
                 >
                   <a

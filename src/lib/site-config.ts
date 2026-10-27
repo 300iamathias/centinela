@@ -32,6 +32,11 @@ export const SITE = {
     { day: "Central de monitoreo", hours: "24 horas, todos los días" },
   ],
 
+  // ⚠️ MARCADOR (demo): zonas de cobertura — ajustar a la operación real del cliente
+  mapDirections:
+    "https://www.google.com/maps/dir/?api=1&destination=" +
+    encodeURIComponent("Av. Amazonas N39-123, Quito, Ecuador"),
+
   // ⚠️ MARCADOR: registro/autorización de operación — validar con el cliente antes de mostrar
   permitNumber: "",
 
@@ -210,7 +215,7 @@ export const GALLERY = [
     id: "gal-central",
     src: "/images-security/gallery/gal-central.jpg",
     title: "Central de monitoreo",
-    description: " Videovigilancia y alarmas atendidas 24/7.",
+    description: "Videovigilancia y alarmas atendidas 24/7.",
     category: "Tecnología" as const,
   },
   {
@@ -316,6 +321,16 @@ export const FAQS = [
   },
 ] as const;
 
+/** Zonas de cobertura — ⚠️ MARCADORES de demo: ajustar a la operación real */
+export const COVERAGE_ZONES = [
+  "Quito Centro y Norte",
+  "Cumbayá y Tumbaco",
+  "Valles de Los Chillos",
+  "Guayaquil",
+  "Cuenca",
+  "Cobertura nacional multi-sede",
+] as const;
+
 /** Opciones del cotizador rápido */
 export const QUOTE_OPTIONS = {
   services: [
@@ -342,6 +357,7 @@ export const WA_MESSAGES = {
   hero: "Hola Centinela 👋 Quiero una evaluación de seguridad gratuita para mi empresa.",
   quote: "Hola Centinela 👋 Quiero cotizar un servicio de seguridad.",
   alarm: "Hola Centinela 👋 Se activó una alarma en mi domicilio/empresa.", // ejemplo de flujo de alarma
+  sos: "🚨 EMERGENCIA — Necesito contacto inmediato con la central de monitoreo.", // botón SOS de la banda roja
 } as const;
 
 /** Construye el enlace de WhatsApp con mensaje codificado */

@@ -5,6 +5,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown, Radio, ShieldCheck, Timer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { InstallAppButton } from "./install-app-button";
+import { LiveClock } from "./live-clock";
 import { WA_MESSAGES, waUrl } from "@/lib/site-config";
 
 const CHIPS = [
@@ -57,7 +58,10 @@ export function HeroSection() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-70" />
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500" />
             </span>
-            Central de monitoreo activa · 24/7
+            <span className="hidden sm:inline">Central de monitoreo activa · 24/7 ·</span>
+            <span className="sm:hidden">Central activa ·</span>
+            <LiveClock />
+            <span className="text-paper-100/60">ECT</span>
           </motion.p>
 
           <motion.h1

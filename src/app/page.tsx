@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/security/navbar";
 import { HeroSection } from "@/components/security/hero-section";
 import { TrustBar } from "@/components/security/trust-bar";
+import { EmergencyStrip } from "@/components/security/emergency-strip";
 import { ServicesSection } from "@/components/security/services-section";
 import { ProcessSection } from "@/components/security/process-section";
 import { SectorsSection } from "@/components/security/sectors-section";
@@ -22,6 +23,7 @@ export default function Home() {
       <main className="flex-1 pb-[68px] md:pb-0">
         <HeroSection />
         <TrustBar />
+        <EmergencyStrip />
         <ServicesSection />
         <ProcessSection />
         <SectorsSection />
